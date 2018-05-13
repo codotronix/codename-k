@@ -1,0 +1,67 @@
+.page-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.story-row {
+    margin-top: 75px;
+}
+
+.story-row .story-img img {
+    border-radius: 100px;
+}
+
+.story-row .story-caption {
+    font-size: 50px;
+    padding: 50px 100px;
+}
+
+.story-row .story-caption .quotes-icon {
+    color: #b0b9e8;
+    vertical-align: top;
+    vertical-align: super;
+}
+
+/*
+ for 1600 and below
+*/
+@media (max-width: 1600px) {
+    .story-row .story-caption {
+        font-size: 40px;
+        padding: 40px 70px;
+    }
+}
+
+/*
+ for 1200 and below
+*/
+@media (max-width: 1200px) {
+    .story-row .story-caption {
+        font-size: 30px;
+        padding: 40px;
+    }
+}
+
+/*
+ for 1000 and below
+*/
+@media (max-width: 1000px) {
+    .story-row .story-caption {
+        font-size: 25px;
+        padding: 20px;
+    }
+}
+
+/*
+ for 767 and below
+*/
+@media (max-width: 767px) {
+    .story-row {
+        margin-top: 30px;
+    }
+
+    .story-row .story-caption {
+        font-size: 25px;
+        padding: 20px 40px;
+    }
+}

@@ -1,16 +1,18 @@
 <div>
 
-    <h1>Our Story</h1>
+    <h1 class="page-title">Our Story</h1>
 
-    <div class="row">
+    <div class="row story-row" *ngFor="let x of imageAndCaptions; let i = index;">
         <!-- Image Container -->
-        <div class="col-xs-12 col-sm-8 col-md-7">
-            <img src="assets/img/silhouette-3360822_1920.jpg" class="img-responsive"/>
+        <div class="col-xs-12 col-sm-6 col-md-6 story-img" [ngClass]="{'pull-right': (i % 2 !== 0)}">
+            <img src="{{x.imgUrl}}" class="img-responsive"/>
         </div>
 
         <!-- Caption Container -->
-        <div class="col-xs-12 col-sm-8 col-md-7">
-            We are a group of individuals who love teaching
+        <div class="col-xs-12 col-sm-6 col-md-6 story-caption">
+            <i class="fas fa-quote-left quotes-icon"></i>
+            <span><i>{{x.caption}}</i></span>
+            <i class="fas fa-quote-right quotes-icon"></i>
         </div>
     </div>
 

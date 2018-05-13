@@ -4,10 +4,13 @@
     left: 0;
     right: 0;
     height: 165px;
+    background: #fff;
+    z-index: 99999;
+    border-bottom: 10px solid #cbcbef;
 }
 
 .header .logo-img {
-    margin: 7px;
+    margin: 15px;
     height: 120px;
     background: blue;
     padding: 10px;
