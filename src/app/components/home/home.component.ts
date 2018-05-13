@@ -30,7 +30,7 @@ export class HomeComponent {
         },
         {
             "imgUrl": "assets/img/nature-3289812_1920.jpg",
-            "caption": "We seek out the soul, the living world in your books and syllabus... And put in the hand of our students..."
+            "caption": "We seek out the soul, the living world in their books and syllabus... And put in the hand of our students..."
         },
         {
             "imgUrl": "assets/img/animal-3346192_1920.jpg",
