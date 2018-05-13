@@ -1,0 +1,47 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+}
+
+.header .logo-img {
+    margin: 7px;
+    height: 120px;
+    background: blue;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: -6px 6px 8px 0px #6b6b71;
+}
+
+.header .header-menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    list-style: none;
+    background: #00f;
+    color: #fff;
+    padding: 0px 0 0 20px;
+    border-radius: 20px 0 0 20px;
+    border-left: 25px solid #ff0;
+    border-right: 7px solid #ff0;
+    font-size: 20px;
+}
+
+.header .header-menu li {
+    display: inline-block;
+    padding: 5px 10px;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header .header-menu li:hover {
+    border-bottom-color: #ffcfcf; 
+}
+
+.header .header-menu li.active,
+.header .header-menu li.active:hover {
+    border-bottom-color: #ff0;  
+}
