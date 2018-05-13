@@ -65,7 +65,7 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    Welcome to {{ title }}!\r\n  </h1>\r\n</div>\r\n\r\n<app-header></app-header>\r\n\r\n<div class=\"main-container container-fluid\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n</div>\n\n<app-header></app-header>\n\n<div class=\"main-container container-fluid\">\n  <router-outlet></router-outlet>\n</div>\n\n"
 
 /***/ }),
 
@@ -206,7 +206,7 @@ var AboutComponent = /** @class */ (function () {
 /***/ "./src/app/components/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header\">\r\n\r\n    <img src=\"assets/img/Knexsol-logo-text-200v.png\" class=\"logo-img\"/>\r\n\r\n    <!-- <ul class=\"header-menu\">\r\n        <li routerLink=\"\">Home</li>\r\n        <li>Faculties</li>\r\n        <li routerLink=\"about\">About Us</li>\r\n    </ul> -->\r\n</div>"
+module.exports = "<div class=\"header\">\n\n    <img src=\"assets/img/Knexsol-logo-text-200v.png\" class=\"logo-img\"/>\n\n    <!-- <ul class=\"header-menu\">\n        <li routerLink=\"\">Home</li>\n        <li>Faculties</li>\n        <li routerLink=\"about\">About Us</li>\n    </ul> -->\n</div>"
 
 /***/ }),
 
@@ -251,14 +251,14 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n\r\n    <h1 class=\"page-title\">Our Story</h1>\r\n\r\n    <div class=\"row story-row\" *ngFor=\"let x of imageAndCaptions; let i = index;\">\r\n        <!-- Image Container -->\r\n        <div class=\"col-xs-12 col-sm-6 col-md-6 story-img\" [ngClass]=\"{'pull-right': (i % 2 !== 0)}\">\r\n            <img src=\"{{x.imgUrl}}\" class=\"img-responsive\"/>\r\n        </div>\r\n\r\n        <!-- Caption Container -->\r\n        <div class=\"col-xs-12 col-sm-6 col-md-6 story-caption\">\r\n            <i class=\"fas fa-quote-left quotes-icon\"></i>\r\n            <span><i>{{x.caption}}</i></span>\r\n            <i class=\"fas fa-quote-right quotes-icon\"></i>\r\n        </div>\r\n    </div>\r\n\r\n</div>"
+module.exports = "<div>\n\n    <h1 class=\"page-title\">Our Story</h1>\n\n    <div class=\"row story-row\" *ngFor=\"let x of imageAndCaptions; let i = index;\">\n        <!-- Image Container -->\n        <div class=\"col-xs-12 col-sm-6 col-md-6 story-img\" [ngClass]=\"{'pull-right': (i % 2 !== 0)}\">\n            <img src=\"{{x.imgUrl}}\" class=\"img-responsive\"/>\n        </div>\n\n        <!-- Caption Container -->\n        <div class=\"col-xs-12 col-sm-6 col-md-6 story-caption\">\n            <i class=\"fas fa-quote-left quotes-icon\"></i>\n            <span><i>{{x.caption}}</i></span>\n            <i class=\"fas fa-quote-right quotes-icon\"></i>\n        </div>\n    </div>\n\n</div>"
 
 /***/ }),
 
 /***/ "./src/app/components/home/home.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".page-title {\n  font-size: 50px;\n  text-align: center; }\n\n.story-row {\n  margin-top: 75px; }\n\n.story-row .story-img img {\n  border-radius: 20px; }\n\n.story-row .story-caption {\n  font-size: 50px;\n  padding: 50px 100px; }\n\n.story-row .story-caption .quotes-icon {\n  color: #b0b9e8;\n  vertical-align: top;\n  vertical-align: super; }\n\n/*\r\n for 1600 and below\r\n*/\n\n@media (max-width: 1600px) {\n  .story-row .story-caption {\n    font-size: 40px;\n    padding: 40px 70px; } }\n\n/*\r\n for 1200 and below\r\n*/\n\n@media (max-width: 1200px) {\n  .story-row .story-caption {\n    font-size: 30px;\n    padding: 40px; } }\n\n/*\r\n for 1000 and below\r\n*/\n\n@media (max-width: 1000px) {\n  .story-row .story-caption {\n    font-size: 25px;\n    padding: 20px; } }\n\n/*\r\n for 767 and below\r\n*/\n\n@media (max-width: 767px) {\n  .story-row {\n    margin-top: 30px; }\n  .story-row .story-caption {\n    font-size: 25px;\n    padding: 20px 40px; } }\n"
+module.exports = ".page-title {\n  font-size: 70px;\n  text-align: center; }\n\n.story-row {\n  margin-top: 75px; }\n\n.story-row .story-img img {\n  border-radius: 20px; }\n\n.story-row .story-caption {\n  font-size: 50px;\n  padding: 50px 100px; }\n\n.story-row .story-caption .quotes-icon {\n  color: #b0b9e8;\n  vertical-align: top;\n  vertical-align: super; }\n\n/*\n for 1600 and below\n*/\n\n@media (max-width: 1600px) {\n  .story-row .story-caption {\n    font-size: 40px;\n    padding: 40px 70px; } }\n\n/*\n for 1200 and below\n*/\n\n@media (max-width: 1200px) {\n  .story-row .story-caption {\n    font-size: 30px;\n    padding: 40px; } }\n\n/*\n for 1000 and below\n*/\n\n@media (max-width: 1000px) {\n  .story-row .story-caption {\n    font-size: 25px;\n    padding: 20px; } }\n\n/*\n for 767 and below\n*/\n\n@media (max-width: 767px) {\n  .story-row {\n    margin-top: 30px; }\n  .story-row .story-caption {\n    font-size: 25px;\n    padding: 20px 40px; } }\n"
 
 /***/ }),
 
@@ -284,7 +284,7 @@ var HomeComponent = /** @class */ (function () {
             },
             {
                 "imgUrl": "assets/img/bible-3392752_1920.jpg",
-                "caption": "With us Books no longer remain a big bundle of dead pages and black boring text..."
+                "caption": "With us Books no longer remain a big bulk of dead pages and boring text..."
             },
             {
                 "imgUrl": "assets/img/narrative-794978_1920.jpg",

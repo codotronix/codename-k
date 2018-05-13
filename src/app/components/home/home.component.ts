@@ -14,7 +14,7 @@ export class HomeComponent {
         },
         {
             "imgUrl": "assets/img/bible-3392752_1920.jpg",
-            "caption": "With us Books no longer remain a big bundle of dead pages and black boring text..."
+            "caption": "With us Books no longer remain a big bulk of dead pages and boring text..."
         },
         {
             "imgUrl": "assets/img/narrative-794978_1920.jpg",
